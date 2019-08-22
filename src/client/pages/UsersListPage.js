@@ -6,7 +6,7 @@ class UserList extends React.Component {
   componentDidMount() {
     this.props.fetchUsers();
   }
-
+  
   renderUsers() {
     return this.props.users.map(user => {
       return <li key={user.id}>{user.name}</li>;
